@@ -1,13 +1,15 @@
 name: RotatingMapSystem
-version: '1.0-SNAPSHOT'
+version: 1.0-SNAPSHOT
 main: me.crunchycars.rotatingMapSystem.RotatingMapSystem
-api-version: '1.19'
+api-version: 1.19
 load: STARTUP
 
 commands:
   adventure:
     description: Opens the adventure menu
     usage: /adventure
-  giveIcyCavernsItem:
-    description: Gives the player the Icy Caverns item.
-    usage: giveIcyCavernsItem
+  setmaptime:
+    description: Sets the remaining time for the current map in seconds
+    usage: /setmaptime <value>
+    permission: rotatingmapsystem.admin
+    permission-message: You do not have permission to use this command.
